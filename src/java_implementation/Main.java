@@ -12,21 +12,24 @@ class Main {
             System.exit(-1);
         }
 
-        var taskNumber = args[0];
-        var input = args[1];
-        var satInput = args[2];
-        var satOutput = args[3];
-        var output = args[4];
+        String taskNumber = args[0];
+        String input = args[1];
+        String satInput = args[2];
+        String satOutput = args[3];
+        String output = args[4];
 
         switch (taskNumber) {
-            case "task1" -> task = new Task1();
-            case "task2" -> task = new Task2();
-            case "task3" -> task = new Task3();
-            case "bonus" -> task = new BonusTask();
-            default -> {
+            case "task1":
+                task = new Task1(); break;
+            case "task2":
+                task = new Task2(); break;
+            case "task3":
+                task = new Task3(); break;
+            case "bonus":
+                task = new BonusTask(); break;
+            default :
                 System.err.println("Not a valid task");
                 System.exit(-1);
-            }
         }
 
         task.addFiles(input, satInput, satOutput, output);
