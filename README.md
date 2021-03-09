@@ -133,7 +133,6 @@ O(N^2) + O(N) = O(N^2)
 
 ├── checker_log.txt
 ├── checker.py
-│   ├── 321CD_AbagiuRazvan_Tema2.zip
 │   ├── README
 │   └── src
 │       └── java_implementation
