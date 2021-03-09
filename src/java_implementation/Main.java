@@ -20,14 +20,18 @@ class Main {
 
         switch (taskNumber) {
             case "task1":
-                task = new Task1(); break;
+                task = new Task1();
+                break;
             case "task2":
-                task = new Task2(); break;
+                task = new Task2();
+                break;
             case "task3":
-                task = new Task3(); break;
+                task = new Task3();
+                break;
             case "bonus":
-                task = new BonusTask(); break;
-            default :
+                task = new BonusTask();
+                break;
+            default:
                 System.err.println("Not a valid task");
                 System.exit(-1);
         }

@@ -18,19 +18,21 @@ public abstract class Task {
 
     public abstract void readProblemData() throws IOException;
 
-    public void formulateOracleQuestion() throws IOException {}
+    public void formulateOracleQuestion() throws IOException {
+    }
 
-    public void decipherOracleAnswer() throws IOException {}
+    public void decipherOracleAnswer() throws IOException {
+    }
 
     public abstract void writeAnswer() throws IOException;
 
     /**
      * Stores the files paths as class attributes.
      *
-     * @param inFilename         the file containing the problem input
-     * @param oracleInFilename   the file containing the oracle input
-     * @param oracleOutFilename  the file containing the oracle output
-     * @param outFilename        the file containing the problem output
+     * @param inFilename        the file containing the problem input
+     * @param oracleInFilename  the file containing the oracle input
+     * @param oracleOutFilename the file containing the oracle output
+     * @param outFilename       the file containing the problem output
      */
     public void addFiles(String inFilename, String oracleInFilename, String oracleOutFilename, String outFilename) {
         this.inFilename = inFilename;
